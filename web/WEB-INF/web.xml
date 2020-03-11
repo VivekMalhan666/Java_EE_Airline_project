@@ -1,0 +1,216 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<web-app version="3.1" xmlns="http://xmlns.jcp.org/xml/ns/javaee" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://xmlns.jcp.org/xml/ns/javaee http://xmlns.jcp.org/xml/ns/javaee/web-app_3_1.xsd">
+    <servlet-mapping>
+        <servlet-name>TestWS</servlet-name>
+        <url-pattern>/TestWS</url-pattern>
+    </servlet-mapping>
+    <session-config>
+        <session-timeout>
+            2
+        </session-timeout>
+    </session-config>
+    <welcome-file-list>
+        <welcome-file>sign up.jsp</welcome-file>
+    </welcome-file-list>
+    <listener>
+        <listener-class>com.sun.xml.ws.transport.http.servlet.WSServletContextListener</listener-class>
+    </listener>
+    <servlet>
+        <servlet-name>SignUp</servlet-name>
+        <servlet-class>Servlets.Signup</servlet-class>
+    </servlet>
+    <servlet>
+        <servlet-name>Addflight</servlet-name>
+        <servlet-class>Servlets.AddFlight</servlet-class>
+    </servlet>
+    <servlet>
+        <servlet-name>price</servlet-name>
+        <servlet-class>Servlets.SetPrices</servlet-class>
+    </servlet>
+    <servlet>
+        <servlet-name>update</servlet-name>
+        <servlet-class>Servlets.UpdatePrices</servlet-class>
+    </servlet>
+    <servlet>
+        <servlet-name>setseats</servlet-name>
+        <servlet-class>Servlets.SetSeats</servlet-class>
+    </servlet>
+    <servlet>
+        <servlet-name>updateseats</servlet-name>
+        <servlet-class>Servlets.UpdateSeats</servlet-class>
+    </servlet>
+    <servlet>
+        <servlet-name>setdeals</servlet-name>
+        <servlet-class>Servlets.SetDeals</servlet-class>
+    </servlet>
+    <servlet>
+        <servlet-name>login</servlet-name>
+        <servlet-class>Servlets.Login</servlet-class>
+    </servlet>
+    <servlet>
+        <servlet-name>logout</servlet-name>
+        <servlet-class>Servlets.Logout</servlet-class>
+    </servlet>
+    <servlet>
+        <servlet-name>signupp</servlet-name>
+        <servlet-class>Servlets.sign</servlet-class>
+    </servlet>
+    <servlet>
+        <servlet-name>avail</servlet-name>
+        <servlet-class>Servlets.Availability</servlet-class>
+    </servlet>
+    <servlet>
+        <servlet-name>getprice</servlet-name>
+        <servlet-class>Servlets.GetPrice</servlet-class>
+    </servlet>
+    <servlet>
+        <servlet-name>approveprices</servlet-name>
+        <servlet-class>Servlets.Approve</servlet-class>
+    </servlet>
+    <servlet>
+        <servlet-name>disapproveprices</servlet-name>
+        <servlet-class>Servlets.Disapprove</servlet-class>
+    </servlet>
+    <servlet>
+        <servlet-name>getseats</servlet-name>
+        <servlet-class>Servlets.GetSeats</servlet-class>
+    </servlet>
+    <servlet>
+        <servlet-name>showfclass</servlet-name>
+        <servlet-class>Servlets.DisplaySeats</servlet-class>
+    </servlet>
+    <servlet>
+        <servlet-name>book</servlet-name>
+        <servlet-class>Servlets.Booking</servlet-class>
+    </servlet>
+    <servlet>
+        <servlet-name>SendMail</servlet-name>
+        <servlet-class>SendMail</servlet-class>
+    </servlet>
+    <servlet>
+        <servlet-name>confirm</servlet-name>
+        <servlet-class>Servlets.ConfirmBooking</servlet-class>
+    </servlet>
+    <servlet>
+        <servlet-name>TestWS</servlet-name>
+        <servlet-class>com.sun.xml.ws.transport.http.servlet.WSServlet</servlet-class>
+        <load-on-startup>1</load-on-startup>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>SignUp</servlet-name>
+        <url-pattern>/Signup</url-pattern>
+    </servlet-mapping>
+    <servlet-mapping>
+        <servlet-name>Addflight</servlet-name>
+        <url-pattern>/Add</url-pattern>
+    </servlet-mapping>
+    <servlet-mapping>
+        <servlet-name>price</servlet-name>
+        <url-pattern>/SetPrices</url-pattern>
+    </servlet-mapping>
+    <servlet-mapping>
+        <servlet-name>update</servlet-name>
+        <url-pattern>/UpdatePrices</url-pattern>
+    </servlet-mapping>
+    <servlet-mapping>
+        <servlet-name>setseats</servlet-name>
+        <url-pattern>/SetSeats</url-pattern>
+    </servlet-mapping>
+    <servlet-mapping>
+        <servlet-name>updateseats</servlet-name>
+        <url-pattern>/UpdateSeats</url-pattern>
+    </servlet-mapping>
+    <servlet-mapping>
+        <servlet-name>setdeals</servlet-name>
+        <url-pattern>/SetDeals</url-pattern>
+    </servlet-mapping>
+    <servlet-mapping>
+        <servlet-name>login</servlet-name>
+        <url-pattern>/Login</url-pattern>
+    </servlet-mapping>
+    <servlet-mapping>
+        <servlet-name>logout</servlet-name>
+        <url-pattern>/Logout</url-pattern>
+    </servlet-mapping>
+    <servlet-mapping>
+        <servlet-name>signupp</servlet-name>
+        <url-pattern>/sign</url-pattern>
+    </servlet-mapping>
+    <servlet-mapping>
+        <servlet-name>avail</servlet-name>
+        <url-pattern>/Availability</url-pattern>
+    </servlet-mapping>
+    <servlet-mapping>
+        <servlet-name>getprice</servlet-name>
+        <url-pattern>/GetPrice</url-pattern>
+    </servlet-mapping>
+    <servlet-mapping>
+        <servlet-name>approveprices</servlet-name>
+        <url-pattern>/Approve</url-pattern>
+    </servlet-mapping>
+    <servlet-mapping>
+        <servlet-name>disapproveprices</servlet-name>
+        <url-pattern>/Disapprove</url-pattern>
+    </servlet-mapping>
+    <servlet-mapping>
+        <servlet-name>getseats</servlet-name>
+        <url-pattern>/GetSeats</url-pattern>
+    </servlet-mapping>
+    <servlet-mapping>
+        <servlet-name>showfclass</servlet-name>
+        <url-pattern>/DisplaySeats</url-pattern>
+    </servlet-mapping>
+    <servlet-mapping>
+        <servlet-name>book</servlet-name>
+        <url-pattern>/Booking</url-pattern>
+    </servlet-mapping>
+    <servlet-mapping>
+        <servlet-name>SendMail</servlet-name>
+        <url-pattern>/Servlets/SendMail</url-pattern>
+    </servlet-mapping>
+    <servlet-mapping>
+        <servlet-name>confirm</servlet-name>
+        <url-pattern>/ConfirmBooking</url-pattern>
+    </servlet-mapping>
+    <login-config>
+        <auth-method>BASIC</auth-method>
+    </login-config>
+    <security-role>
+        <role-name> Admin </role-name>
+    </security-role>
+    <security-role>
+        <role-name> Manager </role-name>
+    </security-role>
+    <security-role>
+        <role-name> Guest </role-name>
+    </security-role>
+    <security-constraint>
+        <web-resource-collection>
+            <web-resource-name> AdminPages</web-resource-name>
+            <url-pattern>/adminhome.jsp/* </url-pattern>
+            <url-pattern>/checkAvailability.jsp/* </url-pattern>
+            <url-pattern>/dealsofflights.jsp/* </url-pattern>
+            <url-pattern>/flightaddition.jsp/* </url-pattern>
+            <url-pattern>/setprices.jsp/* </url-pattern>
+            <url-pattern>/setseats.jsp/* </url-pattern>
+            <http-method>GET</http-method>
+            <http-method>POST</http-method>
+        </web-resource-collection>
+        <auth-constraint>
+            <role-name> Admin </role-name>
+        </auth-constraint>
+    </security-constraint>
+    <security-constraint>
+        <web-resource-collection>
+            <web-resource-name>ManagerPages</web-resource-name>
+            <url-pattern>/Listofseats.jsp/* </url-pattern>
+            <url-pattern>/approvedeals.jsp/* </url-pattern>
+            <url-pattern>/approveprice.jsp/* </url-pattern>
+            <url-pattern>/approveseats.jsp/* </url-pattern>
+            <url-pattern>/manager home.jsp/* </url-pattern>
+        </web-resource-collection>
+        <auth-constraint>
+            <role-name> Manager </role-name>
+        </auth-constraint>
+    </security-constraint>
+</web-app>

@@ -1,0 +1,18 @@
+SMAP
+checkAvailability_jsp.java
+JSP
+*S JSP
+*F
++ 0 checkAvailability.jsp
+checkAvailability.jsp
+*L
+5,12:45
+17:57,3
+18,10:60
+28:70,3
+29,2:73
+31:75,3
+32,2:78
+34:80,3
+35,31:83
+*E

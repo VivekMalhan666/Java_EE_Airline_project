@@ -1,0 +1,55 @@
+﻿/*header*/
+ul {
+    list-style-type: none;
+    overflow: hidden;
+    background-color:blue;
+    padding : 0;
+    position: fixed; 
+    top: 0;
+    width: 100%;
+    right:0;
+}
+
+li {
+    float: left;
+}
+
+li a {
+    display: inline-block;
+    color: white;
+    text-align: center;
+    padding: 30px 25px;
+    text-decoration: none;
+    width: 150px;
+   
+}
+
+li a:hover, .dropdown:hover .dropbtn {
+    background-color: blue !important;
+    
+}
+
+
+/*footer*/
+footer {
+    width: 100%;
+    border: 10px #333;
+    background-color: #00008B;
+    color: white;
+    text-align: center;
+    position: fixed;
+    bottom: 0;
+    right: 0;
+    padding: 25px 20px;
+     display: inline-block;
+     
+     overflow: hidden;
+}
+
+a {
+    padding: 25px 20px;
+    color: white;
+    text-decoration: none;
+    width: 150px;
+   
+}
